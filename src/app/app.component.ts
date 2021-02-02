@@ -7,8 +7,6 @@
 })
 export class AppComponent {
 
-  title = 'Seja bem-vindo!'
-
   //primeira funcao que é chamada quando a classe é instanciada
   constructor() {
     
