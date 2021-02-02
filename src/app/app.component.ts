@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'minha-aplicacao';
+
+  title = 'Seja bem-vindo!'
+
+  //primeira funcao que é chamada quando a classe é instanciada
+  constructor() {
+    
+  }
+
+ 
 }
+
