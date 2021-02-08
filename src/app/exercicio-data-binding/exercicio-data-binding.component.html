@@ -1,0 +1,56 @@
+<h1>Exemplos Event Binding:</h1>
+<!-- Exercicio contador -->
+<app-counter 
+    [(valor)] = "valorInput"
+>
+</app-counter>
+<!-- (valorAlterado) = "receberEvento($event)" -->
+
+<!-- Eventos Customizados -->
+<button (click) = "onClickBotaoEmissor($event)" >
+    Emitir informação de clique.
+</button><br><br>
+
+<!-- Eventos pre estabelecidos -->
+<button 
+    (click) = "onClick($event)" 
+>
+    Clique em mim!
+</button><br><br>
+
+<input 
+    type="text" 
+    [value]="valorInput" 
+    (keyup) = "valorDoInput($event)"
+>
+
+<p>Valor do Input: {{valorInput}}</p>
+
+<br>
+
+<hr>
+
+<br>
+
+<h1>Exemplos Property Binding:</h1>
+
+<h2>Palavra: {{palavra}}</h2>
+
+<h2>Cor: {{color}}</h2>
+
+<input 
+    type="text" 
+    [value]="valorInput"
+>
+
+<br><br>
+
+<img 
+    [src]="imageURL" 
+    alt="Imagem de um gatinho"
+>
+
+<br>
+
+
+
